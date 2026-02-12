@@ -1,0 +1,5 @@
+CLASS zcl_bp_sai_bsupply_m DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF zi_sai_travel_m.
+ENDCLASS.
+
+CLASS zcl_bp_sai_bsupply_m IMPLEMENTATION.
+ENDCLASS.

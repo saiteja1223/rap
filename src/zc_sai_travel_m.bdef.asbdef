@@ -1,0 +1,32 @@
+projection;
+strict ( 2 );
+
+define behavior for ZC_SAI_TRAVEL_M //alias <alias_name>
+use etag
+{
+  use create;
+  use update;
+  use delete;
+
+  use association _Booking { create; }
+}
+
+define behavior for ZC_SAI_BOOKING_M //alias <alias_name>
+use etag
+{
+  use update;
+  use delete;
+
+  use association _Travel;
+  use association _bookingsuppl { create; }
+}
+
+define behavior for ZC_SAI_BSUPPLY_M //alias <alias_name>
+use etag
+{
+  use update;
+  use delete;
+
+  use association _Travel;
+  use association _booking;
+}
