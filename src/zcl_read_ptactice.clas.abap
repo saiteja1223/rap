@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_read_ptactice IMPLEMENTATION.
+CLASS ZCL_READ_PTACTICE IMPLEMENTATION.
+
+
  method if_oo_adt_classrun~main.
 *   read entity Zi_sai_travel_m
 *     from value #( ( %key-TravelId = '00000021'
@@ -71,7 +73,7 @@ CLASS zcl_read_ptactice IMPLEMENTATION.
                 results = Ref #( it_travel_result )
                ) ).
                read ENTITIES
-                       operations it_optab
+                       OPERATIONS it_optab
                         failed  data(it_failed_sort).
 
               if it_failed_sort is not initial .

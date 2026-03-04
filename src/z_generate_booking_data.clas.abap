@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS z_generate_booking_data IMPLEMENTATION.
+CLASS Z_GENERATE_BOOKING_DATA IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
     " -----------------------------------------------------------------

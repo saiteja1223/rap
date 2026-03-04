@@ -27,8 +27,11 @@ association[1..1] to  /DMO/I_Overall_Status_VH as _status on $projection.Overall
     currency_code as CurrencyCode,
     description as Description,
     overall_status as OverallStatus,
+    @Semantics.user.createdBy: true
     created_by as CreatedBy,
+    @Semantics.systemDateTime.createdAt: true
     created_at as CreatedAt,
+    @Semantics.user.localInstanceLastChangedBy: true
     last_changed_by as LastChangedBy,
     @Semantics.systemDateTime.localInstanceLastChangedAt: true
     last_changed_at as LastChangedAt,

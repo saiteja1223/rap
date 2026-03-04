@@ -1,0 +1,5 @@
+@EndUserText.label: 'Approver application'
+define service Zui_sai_travel_Approver_m {
+  expose ZC_sai_Travel_ApproveR_m;
+  expose ZC_sai_booking_ApproveR_m;
+}

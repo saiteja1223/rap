@@ -11,7 +11,9 @@ ENDCLASS.
 
 
 
-CLASS z_generate_travel_data IMPLEMENTATION.
+CLASS Z_GENERATE_TRAVEL_DATA IMPLEMENTATION.
+
+
 METHOD if_oo_adt_classrun~main.
 
     " 1. Delete existing data to avoid duplicates

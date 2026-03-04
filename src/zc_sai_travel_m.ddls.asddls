@@ -23,9 +23,9 @@ as projection on ZI_SAI_Travel_m
     @ObjectModel.text.element:['OverallStatusText']
     OverallStatus,
     _status._Text.Text as OverallStatusText :localized,
-   // CreatedBy,
-   // CreatedAt,
-   // LastChangedBy,
+    CreatedBy,
+    CreatedAt,
+    LastChangedBy,
     LastChangedAt,
     /* Associations */
     _Agency,
